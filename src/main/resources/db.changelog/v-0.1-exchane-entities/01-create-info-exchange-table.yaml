@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: v-0.1-01
+      author: nualiyeva
+      changes:
+        - createTable:
+            tableName: digumb_exchange
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: exchange_pk
+                    nullable: false
+              - column:
+                  name: code
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: value
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: dat
+                  type: date
+                  constraints:
+                    nullable: false

@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@//192.168.0.17:1521/devdb'
+    username: 'IBS'
+    password: 'IBS'
+    driverClassName: 'oracle.jdbc.OracleDriver'
+  jpa:
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+auth:
+  username: 'digumb'
+  password: 'DU123456'
